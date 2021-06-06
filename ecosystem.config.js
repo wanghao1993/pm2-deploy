@@ -2,7 +2,7 @@
  * @Author: hao.wang
  * @Date: 2021-06-06 16:56:42
  * @LastEditors: your name
- * @LastEditTime: 2021-06-06 18:40:25
+ * @LastEditTime: 2021-06-06 18:46:15
  * @FilePath: /pm2/ecosystem.config.js
  */
 module.exports = {
@@ -21,7 +21,7 @@ module.exports = {
       path : '/www/pm2',
       "pre-setup" : "echo 'commands or local script path to be run on the host before the setup process starts'",
       'pre-deploy-local': '',
-      'post-deploy' : 'cnpm install && pm2 reload ecosystem.config.js --env production',
+      'post-deploy' : 'cnpm install && npm run build',
       'pre-setup': ''
     }
   }
