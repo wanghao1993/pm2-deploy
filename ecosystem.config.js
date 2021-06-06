@@ -2,7 +2,7 @@
  * @Author: hao.wang
  * @Date: 2021-06-06 16:56:42
  * @LastEditors: your name
- * @LastEditTime: 2021-06-06 18:46:15
+ * @LastEditTime: 2021-06-06 18:47:27
  * @FilePath: /pm2/ecosystem.config.js
  */
 module.exports = {
@@ -14,8 +14,8 @@ module.exports = {
   deploy : {
     production : {
       user : 'root',
-      host : '127.0.0.1',
-      port: 80,
+      host : '124.71.181.191',
+      port: 22,
       ref  : 'origin/main',
       repo : 'https://github.com/wanghao1993/pm2-deploy.git',
       path : '/www/pm2',
